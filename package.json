@@ -1,0 +1,52 @@
+{
+  "name": "sync-git-remote",
+  "version": "0.0.0-development",
+  "private": true,
+  "description": "Automatically sync Github repositories with other Git remotes",
+  "keywords": [
+    "actions",
+    "github",
+    "gitee",
+    "sync"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzm0x219/sync-git-remote.git"
+  },
+  "license": "MIT",
+  "author": "Rx",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/main.ts --source-map",
+    "preinstall": "npx only-allow pnpm -y",
+    "prepare": "is-ci || husky install"
+  },
+  "lint-staged": {
+    "*.{js,cjs,ts,tsx}": [
+      "prettier --write",
+      "eslint --cache"
+    ],
+    "*.yml": "prettier --write"
+  },
+  "dependencies": {
+    "@actions/core": "1.10.0",
+    "@actions/github": "5.1.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "1.0.1",
+    "@types/node": "18.11.8",
+    "@typescript-eslint/eslint-plugin": "5.41.0",
+    "@typescript-eslint/parser": "5.41.0",
+    "@vercel/ncc": "0.34.0",
+    "eslint": "8.25.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.1",
+    "is-ci": "3.0.1",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "prettier-plugin-packagejson": "2.3.0",
+    "sort-package-json": "2.0.0",
+    "typescript": "4.8.4"
+  }
+}

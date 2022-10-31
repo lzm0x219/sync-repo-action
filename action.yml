@@ -1,0 +1,10 @@
+name: "Sync Git Remote"
+description: "Automatically sync Github repositories with other Git remotes"
+author: "Rx"
+inputs:
+  force_update:
+    description: "Force update of the target repository.(`git push -f`)"
+    default: false
+runs:
+  using: "node18"
+  main: "dist/index.js"

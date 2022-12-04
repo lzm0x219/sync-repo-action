@@ -13,7 +13,7 @@ specifiers:
   eslint-plugin-prettier: 4.2.1
   husky: 8.0.2
   is-ci: 3.0.1
-  lint-staged: 13.0.4
+  lint-staged: 13.1.0
   prettier: 2.8.0
   prettier-plugin-packagejson: 2.3.0
   sort-package-json: 2.1.0
@@ -34,7 +34,7 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_cwlo2dingkvfydnaculr42urve
   husky: 8.0.2
   is-ci: 3.0.1
-  lint-staged: 13.0.4
+  lint-staged: 13.1.0
   prettier: 2.8.0
   prettier-plugin-packagejson: 2.3.0_prettier@2.8.0
   sort-package-json: 2.1.0
@@ -1083,8 +1083,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /lint-staged/13.0.4:
-    resolution: {integrity: sha512-HxlHCXoYRsq9QCby5wFozmZW00hMs/9e3l+/dz6Qr8Kle4UH0kJTdABAbqhzG+3pcG6QjL9kz7NgGBfph+a5dw==}
+  /lint-staged/13.1.0:
+    resolution: {integrity: sha512-pn/sR8IrcF/T0vpWLilih8jmVouMlxqXxKuAojmbiGX5n/gDnz+abdPptlj0vYnbfE0SQNl3CY/HwtM0+yfOVQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
